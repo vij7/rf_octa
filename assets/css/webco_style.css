@@ -4,12 +4,6 @@
     Version     : 1.0
 \*-------------------------------------------------*/
 
-
-
-/*------------------------------------*\
-    Google font
-\*------------------------------------*/
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,600,700);
 
@@ -17,20 +11,6 @@
 #home {
     background: url("../images/bg-home-1.jpg");
 }
-
-/* #home-bg-parallax > .bg-parallax {
-    background: url("../images/bg-home-3.jpg");
-}
-
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-    background: url("../images/bg-home-1.jpg");
-}
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
-    background: url("../images/bg-home-2.jpg");
-}
-#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
-    background: url("../images/bg-home-3.jpg");
-} */
 
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
     background: url("../../img/slider1.jpg");
@@ -168,7 +148,7 @@
 }
 #offers {
     padding-top: 100px !important;
-    padding-bottom: 50px;
+    padding-bottom: 0;
 }
 .features-box.popup-container.style-5.col-sm-6.col-md-6 {
     margin-bottom: 35px;
@@ -181,10 +161,49 @@
     background: #fff;
     transform: rotate(-3deg);
 }
-
-element {
-
+.swiper-pagination.trpacks {
+    bottom: 38px;
 }
+.swiper-container.trpks .swiper-wrapper {
+    padding-bottom: 100px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 30px;
+    border-radius: 30px;
+    background: #fff;
+    opacity: 0.1;
+}
+.swiper-pagination-bullet-active {
+    background: rgba(0, 122, 255, 1) !important;
+    opacity: 1 !important;
+}
+.features-box.style-5 .inner-content {
+    background: rgba(255,255,255,.8);
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    /* opacity: 0; */
+}
+.features-box.style-5 .inner-content:hover, .features-box.popup-container.style-5:hover .inner-content{
+    /* opacity: 1; */
+    height: 100%;
+}
+.features-box.style-5 label.label-small {
+    margin-top: 0;
+}
+
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
+    background: url("../../img/slider2.jpg");
+}
+.bg-cover.bg-overlay-black-6.display-block.height-100.width-100 {
+    background-color: rgba(0,0,0,0) !important;
+    transition: all 0.4s ease-in-out;
+}
+ .bg-cover.bg-overlay-black-6.display-block.height-100.width-100.is-selected {
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+
 #intro {
 
     padding: 50px 0 80px;
