@@ -191,7 +191,11 @@
 .features-box.style-5 label.label-small {
     margin-top: 0;
 }
+/* .features-box > .position-relative {
 
+    box-shadow: 0 0 50px 20px rgba(0,0,0,0.5);
+
+} */
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
     background: url("../../img/slider2.jpg");
 }
